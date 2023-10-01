@@ -4,9 +4,9 @@ import AboutSwiper from '../../components/Swiper'
 import Main from '../../components/Main'
 import teamData from './teamData';
 
-const TeamSection = () => {
+const TeamSection = (props) => {
   return (
-    <div className={styles.teamSec}>
+    <div className={styles.teamSec} id={props.sectionId ?? ""}>
         <Main 
             subtitle='Teammitglieder'
             title='Unser Team '

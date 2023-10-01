@@ -4,9 +4,9 @@ import styles from './Service.module.css'
 import Services from '../../components/Services';
 import serviceData from './serviceData';
 
-const ServiceSection = () => {
+const ServiceSection = (props) => {
   return (
-    <div className={styles.serviceSec}>
+    <div className={styles.serviceSec} id={props.sectionId ?? ""}>
         <Main 
           className={styles.serviceMain}
 

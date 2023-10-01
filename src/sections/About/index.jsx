@@ -5,9 +5,9 @@ import aboutImg from '../../img/about.svg'
 import TickList from '../../components/TickList'
 import ticks from './tickListData'
 
-const AboutSection = () => {
+const AboutSection = (props) => {
   return (
-    <div className={styles.aboutSec}>
+    <div className={styles.aboutSec} id={props.sectionId ?? ""}>
         <img src={aboutImg} alt="" className={styles.mobileShow} />
 
         <Main 

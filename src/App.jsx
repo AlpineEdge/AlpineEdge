@@ -12,14 +12,14 @@ function App() {
   return (
     <>
       <Header />
-      <IntoductionSection />
-      <ServiceSection />
-      <AboutSection />
-      <TeamSection />
-      <ChooseUsSection>
+      <IntoductionSection sectionId="home"/>
+      <ServiceSection sectionId="services"/>
+      <AboutSection sectionId="about"/>
+      <TeamSection sectionId="team"/>
+      <ChooseUsSection sectionId="choose">
         <TestimonialsSection />
       </ChooseUsSection>
-      <ContactUsSection />
+      <ContactUsSection sectionId="contact"/>
       <Footer />
     </>
   );

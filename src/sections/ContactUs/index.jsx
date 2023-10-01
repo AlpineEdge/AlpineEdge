@@ -2,14 +2,14 @@ import React, { useState } from 'react'
 import styles from './Contact.module.css'
 import Main from '../../components/Main'
 
-const ContactUsSection = () => {
+const ContactUsSection = (props) => {
     const [name, setName] = useState("")
     const [purpose, setPurpose] = useState("")
     const [email, setEmail] = useState("")
     const [message, setMessage] = useState("")
 
   return (
-    <div className={styles.contactSec}>
+    <div className={styles.contactSec} id={props.sectionId ?? ""}>
         <Main
             className={styles.contactMain}
             subtitle='Kontakt'
