@@ -15,7 +15,7 @@ const IntoductionSection = (props) => {
             align='left'
             isDark={true}
         />
-        <a href="#">Kontaktiere uns jetzt</a>
+        <a href="#contact">Kontaktiere uns jetzt</a>
         <img src={introImg} alt="" />
     </div>
   )
