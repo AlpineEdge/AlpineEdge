@@ -11,12 +11,12 @@ export const Footer = () => {
         <div className={styles.contact}> 
             <Main
                 className={styles.footerMain}
-                subtitle='Contact Us'
-                title='Partner with <span>AlpineEdge</span> for Your IT Needs '
+                subtitle='Kontaktieren sie uns'
+                title='Arbeiten Sie mit <span>AlpineEdge</span> für Ihre IT-Bedürfnisse zusammen '
                 align='left'
                 isDark={true}
             />
-            <a href='#'>Send Messages</a>
+            <a href='#'>Kontakt</a>
         </div>
 
         <div className={styles.footer}>

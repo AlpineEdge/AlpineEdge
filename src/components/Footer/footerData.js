@@ -29,24 +29,21 @@ const footerData = [
         links: [
             {
                 url: "#",
-                text: 'About Us',
+                text: 'Über uns',
             },{
                 url: "#",
-                text: 'Our Services',
+                text: 'Unsere Dienstleistungen',
             },{
                 url: "#",
-                text: 'Why Choose Us',
+                text: 'Warum wir',
             },{
                 url: "#",
-                text: 'Contact Us',
-            },{
-                url: "#",
-                text: 'Become A Patner',
-            }
+                text: 'Kontaktieren sie uns',
+            },
         ]
     },
     {
-        header: 'Contact Info',
+        header: 'Kontaktdaten',
         links: [
             {
                 icon: locationImg,
