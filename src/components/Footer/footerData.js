@@ -28,16 +28,16 @@ const footerData = [
         header: 'Über uns',
         links: [
             {
-                url: "#",
+                url: "#about",
                 text: 'Über uns',
             },{
-                url: "#",
+                url: "#services",
                 text: 'Unsere Dienstleistungen',
             },{
-                url: "#",
+                url: "#choose",
                 text: 'Warum wir',
             },{
-                url: "#",
+                url: "#contact",
                 text: 'Kontaktieren sie uns',
             },
         ]
