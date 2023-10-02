@@ -37,6 +37,7 @@
 }
 .contactSec .flexbox .inputBox input,
 .contactSec .flexbox .inputBox textarea{
+    font-family: 'Poppins';
     border-radius: 8px;
     border: 1px solid #04F6BB;
     background: #FFF;
