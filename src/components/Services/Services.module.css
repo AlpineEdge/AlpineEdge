@@ -20,7 +20,7 @@
 
     min-width: 300px;
     max-width: 400px;
-    padding: 30px 60px;
+    padding: 30px 30px 30px 60px;
     margin-left: 60px;
 
     border-radius: 16px;
@@ -76,7 +76,17 @@
         padding-right: 50px;
     }
     .serviceBox{
-        margin-left: 100px;
-        min-width: auto;
+        margin-left: 75px;
+        min-width: 200px;
+    }
+}
+
+@media (max-width: 400px){
+    .services{
+        padding-right: 5px;
+    }
+    .serviceBox{
+        margin-left: 55px;
+        min-width: 200px;
     }
 }
