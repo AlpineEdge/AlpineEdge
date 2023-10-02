@@ -1,4 +1,3 @@
-import profileImg from '../../img/team/profile.jpeg'
 import profileImg2 from '../../img/team/fadel.jpeg'
 import profileImg1 from '../../img/team/rei.jpg'
 const teamData = [

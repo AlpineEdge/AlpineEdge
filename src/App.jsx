@@ -4,7 +4,7 @@ import ServiceSection from "./sections/Service";
 import AboutSection from './sections/About'
 import TeamSection from "./sections/Team";
 import ChooseUsSection from "./sections/ChooseUs";
-import TestimonialsSection from "./sections/Testimonials";
+// import TestimonialsSection from "./sections/Testimonials";
 import ContactUsSection from "./sections/ContactUs";
 import Footer from './components/Footer'
 

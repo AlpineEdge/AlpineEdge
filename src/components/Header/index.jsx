@@ -7,11 +7,11 @@ import mobileMenuIcon from '../../img/mobile_menu.svg'
 const Header = () => {
   return (
     <div className={styles.header}>
-        <img src={logo} className={styles.logo} />
+        <img src={logo} className={styles.logo} alt='' />
         <NavMenu className={styles.mobileHide}/>
         <a href="#contact" className={`${styles.contactButton} ${styles.mobileHide}`}>Zum Kontaktformular</a>
     
-        <img src={mobileMenuIcon} className={styles.mobileMenuIcon} />
+        <img src={mobileMenuIcon} className={styles.mobileMenuIcon} alt='' />
     </div>
   )
 }
