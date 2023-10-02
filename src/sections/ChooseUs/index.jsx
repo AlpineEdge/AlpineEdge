@@ -24,7 +24,7 @@ const ChooseUsSection = (props) => {
             />
         </div>
         <img src={bg} alt="" />
-        {children}
+        {children ?? null}
     </div>
   )
 }

@@ -1,5 +1,6 @@
 .chooseSec{
-    padding: 50px 0 250px;
+    /* padding: 50px 0 250px; */
+    padding: 50px 0;
     position: relative;
 }
 .container{
@@ -38,11 +39,11 @@
 
 @media (max-width: 700px) {
     .chooseSec{
-        padding-bottom: 300px;
+        padding: 50px 0;
     }
 }
-@media (max-width: 450px) {
+/* @media (max-width: 450px) {
     .chooseSec{
         padding-bottom: 350px;
     }
-}
+} */

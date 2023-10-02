@@ -17,7 +17,7 @@ function App() {
       <AboutSection sectionId="about"/>
       <TeamSection sectionId="team"/>
       <ChooseUsSection sectionId="choose">
-        <TestimonialsSection />
+        {/* <TestimonialsSection /> */}
       </ChooseUsSection>
       <ContactUsSection sectionId="contact"/>
       <Footer />

@@ -68,3 +68,9 @@
     line-height: 16px;
     margin: 5px 0;
 }
+
+@media (max-width: 700px){
+    .testimonialSec{
+        display: none;
+    }
+}
