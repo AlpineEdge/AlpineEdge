@@ -1,14 +1,32 @@
 import React from 'react'
 import styles from './NavMenu.module.css';
+import { AiOutlineClose } from "react-icons/ai";
 
 const NavMenu = (props) => {
+  const { links } = props;
+
   return (
     <div className={`${styles.navmenu} ${props?.className}`}>
-        <a href="#home">Home</a>
-        <a href="#services">Angebot</a>
-        <a href="#about">Über uns</a>
-        <a href="#choose">Warum wir</a>
-        <a href="#team">Team</a>
+      {links && links.map((link, index) => (
+        <a key={index} href={link.url}>{link.text}</a>
+      ))}
+    </div>
+  )
+}
+
+export const NavMenuMobile = (props) => {
+  const { links } = props;
+
+  return (
+    <div className={`${styles.mobile} ${props?.isActive && styles.activeMenu}`}>
+      <AiOutlineClose 
+        className={styles.closeIcon} 
+        onClick={() => props?.setIsActive(false)}
+      />
+
+      {links && links.map((link, index) => (
+        <a key={index} href={link.url} onClick={() => props?.setIsActive(false)}>{link.text}</a>
+      ))}
     </div>
   )
 }

@@ -8,3 +8,43 @@
     color: #fff;
     font-weight: 600;
 }
+
+.mobile{
+    position: fixed;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 35px 30px 100px;
+    z-index: 99;
+    font-family: 'Ubuntu';
+    font-weight: bold;
+    /* text-decoration: none; */
+    font-size: 17px;
+    background: #101A53;
+    transition: 0.5s;
+    box-sizing: border-box;
+}
+.activeMenu{
+    left: 0;
+}
+.mobile a{
+    text-decoration: none;
+    /* color: #3ED5DD; */
+    color: #fff;
+    display: block;
+    padding: 20px 10px;
+}
+.closeIcon{
+    position: relative;
+    left: 100%;
+    transform: translateX(-100%);
+    padding: 7px;
+    font-size: 18px;
+    border-radius: 50%;
+    color: #fff;
+    background-color: #04F6BB;
+    font-weight: bold;
+}

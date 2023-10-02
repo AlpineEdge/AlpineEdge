@@ -40,6 +40,7 @@
 @media (max-width: 900px){
     .introSec{
         padding: 30px;
+        margin: 150px 0 100px;
         overflow: hidden;
     }
     .introMain{

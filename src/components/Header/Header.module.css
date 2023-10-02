@@ -21,6 +21,14 @@
 
 @media (max-width: 900px){
     .header{
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        box-sizing: border-box;
+        z-index: 99;
+        background-color: #101A53;
+
         padding: 30px;
         overflow: hidden;
     }
