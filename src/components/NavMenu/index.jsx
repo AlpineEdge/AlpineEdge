@@ -7,9 +7,8 @@ const NavMenu = (props) => {
         <a href="#home">Home</a>
         <a href="#services">Angebot</a>
         <a href="#about">Über uns</a>
-        <a href="#choose">Choose Us</a>
+        <a href="#choose">Warum wir</a>
         <a href="#team">Team</a>
-        <a href="#contact">Kontakt</a>
     </div>
   )
 }
