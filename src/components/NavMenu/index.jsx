@@ -15,7 +15,7 @@ const NavMenu = (props) => {
 }
 
 export const NavMenuMobile = (props) => {
-  const { links } = props;
+  const { links, children } = props;
 
   return (
     <div className={`${styles.mobile} ${props?.isActive && styles.activeMenu}`}>
@@ -27,6 +27,8 @@ export const NavMenuMobile = (props) => {
       {links && links.map((link, index) => (
         <a key={index} href={link.url} onClick={() => props?.setIsActive(false)}>{link.text}</a>
       ))}
+
+      {children ?? null}
     </div>
   )
 }

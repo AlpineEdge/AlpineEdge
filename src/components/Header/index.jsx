@@ -24,7 +24,9 @@ const Header = () => {
           links={headerLinks}
           isActive={activeMenu} 
           setIsActive={setActiveMenu}
-        />
+        >
+          <a href="#contact" className={styles.contactButton} onClick={() => setActiveMenu(false)}>Zum Kontaktformular</a>
+        </NavMenuMobile>
     </div>
   )
 }
