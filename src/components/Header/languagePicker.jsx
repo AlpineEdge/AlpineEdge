@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { languages } from '../../i18n';
 import Dropdown from 'react-bootstrap/Dropdown';
+import styles from './Header.module.css';
 
 const ImgFlag = ({lang}) => {
     const flag = (lang.toLowerCase() === "en") ? "gb" : lang.toLowerCase();
@@ -15,7 +16,7 @@ const ImgFlag = ({lang}) => {
     />
 }
 
-const LanguagePicker = () => {
+const LanguagePicker = ({mobile}) => {
   const { i18n } = useTranslation();
 
   const [webLanguage, setWebLanguage] = useState("de")
@@ -24,8 +25,14 @@ const LanguagePicker = () => {
     i18n.changeLanguage(webLanguage);
   }, [webLanguage])
 
+  console.log(mobile)
+
   return (
-    <Dropdown variant="dark" onSelect={(eventKey) => setWebLanguage(eventKey)}>
+    <Dropdown 
+        variant="dark" 
+        onSelect={(eventKey) => setWebLanguage(eventKey)} 
+        className={!!mobile ? styles.mobileLanguagePicker : styles.languagePicker}
+    >
         <Dropdown.Toggle>
             <ImgFlag lang={webLanguage} />
             {webLanguage.toLocaleUpperCase()}

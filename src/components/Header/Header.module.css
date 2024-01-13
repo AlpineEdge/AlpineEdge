@@ -18,6 +18,25 @@
     display: none;
 }
 
+.languagePicker > button > img,
+.mobileLanguagePicker > button > img{
+    margin-right: 5px;
+}
+
+.languagePicker a,
+.mobileLanguagePicker a{
+    color: var(--bs-dropdown-link-color) !important;
+    display: flex !important;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+}
+
+.mobileLanguagePicker > button{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
 
 @media (max-width: 900px){
     .header{
@@ -42,5 +61,8 @@
     .mobileMenuIcon{
         display: block;
         width: 40px;
+    }
+    .languagePicker{
+        display: none;
     }
 }

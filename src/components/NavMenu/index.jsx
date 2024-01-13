@@ -17,6 +17,7 @@ const NavMenu = (props) => {
 }
 
 export const NavMenuMobile = (props) => {
+  const { t } = useTranslation();
   const { links, children } = props;
 
   return (
@@ -27,7 +28,7 @@ export const NavMenuMobile = (props) => {
       />
 
       {links && links.map((link, index) => (
-        <a key={index} href={link.url} onClick={() => props?.setIsActive(false)}>{link.text}</a>
+        <a key={index} href={link.url} onClick={() => props?.setIsActive(false)}>{t(link.text)}</a>
       ))}
 
       {children ?? null}

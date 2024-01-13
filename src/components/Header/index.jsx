@@ -30,6 +30,7 @@ const Header = () => {
           setIsActive={setActiveMenu}
         >
           <a href="#contact" className={styles.contactButton} onClick={() => setActiveMenu(false)}>Zum Kontaktformular</a>
+          <LanguagePicker mobile={true}/>
         </NavMenuMobile>
     </div>
   )
