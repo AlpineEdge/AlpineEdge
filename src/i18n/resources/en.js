@@ -1,7 +1,7 @@
 export default {
   translation: {
     header: {
-      contactForm: "To Contact Form",
+      contactForm: "Contact Form",
       links: {
         home: "Home",
         services: "Services",
@@ -110,7 +110,7 @@ export default {
         error: `Please try again or contact us at: <a href="#">`,
         name: {
           label: "Name",
-          placeholder: "First and Last Name",
+          placeholder: "Full Name",
           error: {
             empty: "Name is required",
           },
