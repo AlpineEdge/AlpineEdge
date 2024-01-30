@@ -19,7 +19,7 @@ const ImgFlag = ({lang}) => {
 const LanguagePicker = ({mobile}) => {
   const { i18n } = useTranslation();
 
-  const [webLanguage, setWebLanguage] = useState("de")
+  const [webLanguage, setWebLanguage] = useState("en")
   
   useEffect(() => {
     i18n.changeLanguage(webLanguage);
