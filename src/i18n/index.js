@@ -14,6 +14,10 @@ export const languages = [
   "fr",
 ];
 
+export const filterLanguages = (language) => {
+  return language;
+}
+
 const resources = {
   en: enFile,
   de: deFile,

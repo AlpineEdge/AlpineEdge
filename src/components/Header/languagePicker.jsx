@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { languages } from '../../i18n';
+import { filterLanguages, languages } from '../../i18n';
 import Dropdown from 'react-bootstrap/Dropdown';
 import styles from './Header.module.css';
 
@@ -16,16 +16,17 @@ const ImgFlag = ({lang}) => {
     />
 }
 
-const LanguagePicker = ({mobile}) => {
+const LanguagePicker = ({mobile, acceptLanguage}) => {
   const { i18n } = useTranslation();
 
-  const [webLanguage, setWebLanguage] = useState("de")
+  const [webLanguage, setWebLanguage] = useState(filterLanguages(acceptLanguage));
   
   useEffect(() => {
     i18n.changeLanguage(webLanguage);
   }, [webLanguage])
 
-  console.log(mobile)
+//   console.log(mobile)
+  console.log(filterLanguages(acceptLanguage))
 
   return (
     <Dropdown 

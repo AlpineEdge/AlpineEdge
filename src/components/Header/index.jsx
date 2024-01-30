@@ -11,12 +11,14 @@ const Header = () => {
   const { t } = useTranslation();
   const [activeMenu, setActiveMenu] = useState(false);
 
+  const acceptLanguage = navigator.language || navigator.userLanguage;
+
   return (
     <div className={styles.header}>
         <img src={logo} className={styles.logo} alt='' />
         <NavMenu className={styles.mobileHide} links={headerLinks}/>
         <a href="#contact" className={`${styles.contactButton} ${styles.mobileHide}`}>{t('header.contactForm')}</a>
-        <LanguagePicker />
+        <LanguagePicker acceptLanguage={acceptLanguage}/>
     
         <img 
           src={mobileMenuIcon} 
@@ -30,7 +32,7 @@ const Header = () => {
           setIsActive={setActiveMenu}
         >
           <a href="#contact" className={styles.contactButton} onClick={() => setActiveMenu(false)}>Zum Kontaktformular</a>
-          <LanguagePicker mobile={true}/>
+          <LanguagePicker acceptLanguage={acceptLanguage} mobile={true}/>
         </NavMenuMobile>
     </div>
   )
