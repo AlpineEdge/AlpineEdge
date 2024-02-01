@@ -1,4 +1,4 @@
-export default {
+const alFile = {
   translation: {
     header: {
       contactForm: "Te formulari i kontaktit",
@@ -142,3 +142,5 @@ export default {
     }
   }
 }
+
+export default alFile

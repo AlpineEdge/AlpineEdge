@@ -1,4 +1,4 @@
-export default {
+const frFile = {
   translation: {
     header: {
       contactForm: "Au formulaire de contact",
@@ -181,3 +181,4 @@ export default {
     
   }
 
+export default frFile

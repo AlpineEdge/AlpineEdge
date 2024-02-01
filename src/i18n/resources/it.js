@@ -1,4 +1,4 @@
-export default {
+const itFile = {
   translation: {
     header: {
       contactForm: "Al modulo di contatto",
@@ -181,3 +181,4 @@ export default {
     
   }
 
+export default itFile
