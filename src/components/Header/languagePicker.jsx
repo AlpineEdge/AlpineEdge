@@ -23,9 +23,7 @@ const LanguagePicker = ({mobile}) => {
   
   useEffect(() => {
     i18n.changeLanguage(webLanguage);
-  }, [webLanguage])
-
-  console.log(mobile)
+  }, [webLanguage, i18n])
 
   return (
     <Dropdown 

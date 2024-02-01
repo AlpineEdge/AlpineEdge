@@ -1,4 +1,4 @@
-export default {
+const deFile = {
     translation: {
       header: {
         contactForm: "Zum Kontaktformular",
@@ -179,3 +179,5 @@ export default {
       }
     }
   }
+
+export default deFile;
