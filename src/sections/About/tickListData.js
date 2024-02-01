@@ -1,15 +1,15 @@
 const ticks = [
         {
-            title: "Vertrauenswürdiger IT-Partner für Unternehmen",
-            paragraph:'Langjährige erfahrung mit IT projekten'
+            title: "aboutSection.ticklist.tick1.title",
+            paragraph:'aboutSection.ticklist.tick1.paragraph'
         }, 
         {
-            title: "Umfassendes Dienstleistungsangebot zur Stärkung Ihrer Organisation",
-            paragraph:'Von Cloud-Migration und Virtualisierung bis hin zu maßgeschneiderten Softwarelösungen und Projektmanagement - unser breites Dienstleistungsangebot ist darauf ausgerichtet, Ihre Organisation zu stärken und Ihr Geschäft voranzubringen.'
+            title: "aboutSection.ticklist.tick2.title",
+            paragraph:'aboutSection.ticklist.tick2.paragraph'
         }, 
         {
-            title: "Engagiert für Innovation und Kundenzufriedenheit",
-            paragraph:'Wir sind ständig auf der Suche nach innovativen Lösungen, um unseren Kunden den bestmöglichen Service zu bieten. Ihre Zufriedenheit ist unser oberstes Ziel'
+            title: "aboutSection.ticklist.tick3.title",
+            paragraph:'aboutSection.ticklist.tick3.paragraph'
         }
     ]
 

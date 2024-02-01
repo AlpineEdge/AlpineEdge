@@ -8,33 +8,33 @@ import service6 from '../../img/services/service_6.svg'
 const serviceData = [
     {
       icon: service1,
-      title: 'Einhaltung von EU-Verordnungen/ISO-Normen',
-      description: 'Wir helfen Ihnen dabei, sicherzustellen, dass Ihre Systeme den EU-Verordnungen und ISO-Normen entsprechen und Sie rechtlich abgesichert sind.'
+      title: 'serviceSection.services.service1.title',
+      description: 'serviceSection.services.service1.description'
     },
     {
       icon: service2,
-      title: '"Cloud-Migration',
-      description: 'Unsere Experten unterstützen Sie bei der nahtlosen Migration Ihrer Daten und Anwendungen in die Cloud.'
+      title: 'serviceSection.services.service2.title',
+      description: 'serviceSection.services.service2.description'
     },
     {
       icon: service3,
-      title: 'Cloud Computing',
-      description: 'Wir bieten Cloud-Computing-Dienstleistungen an, um Ihre IT-Infrastruktur zu optimieren und die Effizienz zu steigern.'
+      title: 'serviceSection.services.service3.title',
+      description: 'serviceSection.services.service3.description'
     },
     {
       icon: service4,
-      title: 'Virtualisierung',
-      description: 'Mit unserer Expertise in der Virtualisierung helfen wir Ihnen, Ihre IT-Ressourcen effizienter zu nutzen und Betriebskosten zu senken.'
+      title: 'serviceSection.services.service4.title',
+      description: 'serviceSection.services.service4.description'
     },
     {
       icon: service5,
-      title: 'Komplettservice für Projektmanagement und -durchführung',
-      description: 'Unser Projektmanagement-Team sorgt für eine effiziente Durchführung und erfolgreiche Umsetzung Ihrer IT-Projekte.'
+      title: 'serviceSection.services.service5.title',
+      description: 'serviceSection.services.service5.description'
     },
     {
       icon: service6,
-      title: 'Individuelle Software',
-      description: 'Wir entwickeln maßgeschneiderte Softwarelösungen, die speziell auf die Anforderungen und Ziele Ihres Unternehmens zugeschnitten sind'
+      title: 'serviceSection.services.service6.title',
+      description: 'serviceSection.services.service6.description'
     }
 ];
 

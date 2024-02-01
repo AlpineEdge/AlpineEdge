@@ -2,13 +2,16 @@ import React, { useEffect, useState } from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
 import styles from './Swiper.module.css'
+import { useTranslation } from 'react-i18next';
 
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 
-export const AboutSwiper = ({ slides}) =>{
+export const AboutSwiper = ({ slides}) => {
+  const { t } = useTranslation();
+
   const [screenWidth, setScreenWidth] = useState(window.innerWidth);
   const [nrSlides, setNrSlides] = useState(3);
 
@@ -44,7 +47,7 @@ export const AboutSwiper = ({ slides}) =>{
           <div className={styles.info}>
             <h3>{slide.name}</h3>
             <h6>{slide.role}</h6>
-            <h5>{slide.text}</h5>
+            <h5>{t(slide.text)}</h5>
           </div>
         </SwiperSlide>
       ))}   

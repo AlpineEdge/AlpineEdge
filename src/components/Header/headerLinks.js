@@ -1,23 +1,23 @@
 const headerLinks = [
     {
         url: "#home",
-        text: 'Home',
+        text: 'header.links.home',
     },
     {
         url: "#services",
-        text: 'Angebot',
+        text: 'header.links.services',
     },
     {
         url: "#about",
-        text: 'Über uns',
+        text: 'header.links.about',
     },
     {
         url: "#choose",
-        text: 'Warum wir',
+        text: 'header.links.choose',
     },
     {
         url: "#team",
-        text: 'Team',
+        text: 'header.links.team',
     },
 ]
 

@@ -4,8 +4,11 @@ import Main from '../../components/Main'
 import api from '../../services';
 import Alert from 'react-bootstrap/Alert';
 import formMessages from './formMessages';
+import { useTranslation } from 'react-i18next';
 
 const ContactUsSection = (props) => {
+    const { t } = useTranslation();
+
     const [name, setName] = useState("")
     const [business, setBusiness] = useState("")
     const [contact, setContact] = useState("")
@@ -110,15 +113,15 @@ const ContactUsSection = (props) => {
 
     const ErrorMessage = ({ inputName }) => {
         const error = hasError(inputName);
-        return error ? <p className={styles.errorMsg}>{error.message}</p> : null;
+        return error ? <p className={styles.errorMsg}>{t(error.message)}</p> : null;
     };
 
   return (
     <div className={styles.contactSec} id={props.sectionId ?? ""}>
         <Main
             className={styles.contactMain}
-            subtitle='Kontakt'
-            title='Kontaktieren sie uns'
+            subtitle={t('contactSection.subtitle')}
+            title={t('contactSection.title')}
             align='center'
             isDark={false}
         />
@@ -135,18 +138,18 @@ const ContactUsSection = (props) => {
                     transform: "translateX(-50%)",
                 }}
             >
-                <div dangerouslySetInnerHTML={{ __html: submitMsg.message }} />
+                <div dangerouslySetInnerHTML={{ __html: t(submitMsg.message) }} />
             </Alert>
         )}
 
         <form onSubmit={handleSubmit}>
             <div className={styles.flexbox}>
                 <div className={styles.inputBox}>
-                    <label htmlFor="name">Name</label>
+                    <label htmlFor="name">{t('contactSection.form.name.label')}</label>
                     <input 
                         type="text" 
                         id='name' 
-                        placeholder='Vor- und Nachname'
+                        placeholder={t('contactSection.form.name.placeholder')}
                         value={name}
                         onChange={(e) => setName(e.target.value)}
                         style={hasError("name") && {borderColor: "#f1aeb5"}}
@@ -154,11 +157,11 @@ const ContactUsSection = (props) => {
                     <ErrorMessage errors={inputError} inputName="name" />
                 </div>
                 <div className={styles.inputBox}>
-                    <label htmlFor="business">Unternehmen</label>
+                    <label htmlFor="business">{t('contactSection.form.business.label')}</label>
                     <input 
                         type="text" 
                         id='business' 
-                        placeholder='Name des Unternehmens'
+                        placeholder={t('contactSection.form.business.placeholder')}
                         value={business}
                         onChange={(e) => setBusiness(e.target.value)}
                         style={hasError("business") && {borderColor: "#f1aeb5"}}
@@ -166,11 +169,11 @@ const ContactUsSection = (props) => {
                     <ErrorMessage errors={inputError} inputName="business" />
                 </div>
                 <div className={styles.inputBox}>
-                    <label htmlFor="contact">E-mail oder Telefonnumer</label>
+                    <label htmlFor="contact">{t('contactSection.form.email.label')}</label>
                     <input 
                         type="text" 
                         id='contact' 
-                        placeholder='E-Mail oder Telefonnumer'
+                        placeholder={t('contactSection.form.email.placeholder')}
                         value={contact}
                         onChange={(e) => setContact(e.target.value)}
                         style={hasError("contact") && {borderColor: "#f1aeb5"}}
@@ -180,10 +183,10 @@ const ContactUsSection = (props) => {
             </div>
             <div className={styles.flexbox}>
                 <div className={`${styles.inputBox} ${styles.messageBox}`}>
-                    <label htmlFor="message">Ihre Mitteilung</label>
+                    <label htmlFor="message">{t('contactSection.form.message.label')}</label>
                     <textarea 
                         id="message" 
-                        placeholder='Wobei können wir Ihnen helfen? beschreiben sie Ihr bedürfnis kurz und jemand aus unserem Team meldet sich raschmöglichst bei Ihnen'
+                        placeholder={t('contactSection.form.message.placeholder')}
                         value={message}
                         onChange={(e) => setMessage(e.target.value)}
                         style={hasError("message") && {borderColor: "#f1aeb5"}}
@@ -192,7 +195,7 @@ const ContactUsSection = (props) => {
                 </div>
                 <input 
                     type="submit" 
-                    value={loading ? "Lädt..." : "Absenden"} 
+                    value={loading ? t('contactSection.form.submit.loading') : t('contactSection.form.submit.send')} 
                     style={loading ? {
                         backgroundColor: "#cbcbcb",
                         color: "#000",

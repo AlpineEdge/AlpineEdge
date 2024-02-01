@@ -4,8 +4,11 @@ import Main from '../../components/Main'
 import aboutImg from '../../img/about.svg'
 import TickList from '../../components/TickList'
 import ticks from './tickListData'
+import { useTranslation } from 'react-i18next';
 
 const AboutSection = (props) => {
+  const { t } = useTranslation();
+
   return (
     <div className={styles.aboutSec} id={props.sectionId ?? ""}>
         <img src={aboutImg} alt="" className={styles.mobileShow} />
@@ -13,8 +16,8 @@ const AboutSection = (props) => {
         <Main 
             className={styles.aboutMain}
 
-            subtitle='Über uns'
-            title='Umfassende <span>IT-Lösungen</span>, maßgeschneidert auf Ihre Bedürfnisse '
+            subtitle={t('aboutSection.subtitle')}
+            title={t('aboutSection.title')}
             paragraph=''
             
             align='center'

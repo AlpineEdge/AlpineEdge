@@ -1,8 +1,11 @@
 import React from 'react'
 import styles from './Ticks.module.css'
 import tickImg from '../../img/tick.svg'
+import { useTranslation } from 'react-i18next';
 
 const TickList = (props) => {
+  const { t } = useTranslation();
+
   return (
     <div 
       className={`
@@ -16,8 +19,8 @@ const TickList = (props) => {
           <img src={tickImg} alt="" />
 
           <div className={styles.info}>
-              <h3>{item.title}</h3>
-              <p>{item.paragraph}</p>
+              <h3>{t(item.title)}</h3>
+              <p>{t(item.paragraph)}</p>
           </div>
         </div>
       ))}

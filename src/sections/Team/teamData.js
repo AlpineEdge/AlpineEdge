@@ -7,25 +7,25 @@ const teamData = [
         image: profileImg1,
         name:  "Rei Arifi",
         role: "",
-        text: "IT Leiter"
+        text: "teamSection.team.member1.text"
     },
     {
         image: profileImg2,
         name:  "Fadel Dia-Eddine",
         role: "",
-        text: "Projektleiter"
+        text: "teamSection.team.member2.text"
     },
     {
         image: profileImg3,
         name:  "Sascha Steiger",
         role: "",
-        text: "Consultant"
+        text: "teamSection.team.member3.text"
     },
     {
         image: profileImg4,
         name:  "Patrik Kamberi",
         role: "",
-        text: "Consultant"
+        text: "teamSection.team.member4.text"
     },
     
 ]

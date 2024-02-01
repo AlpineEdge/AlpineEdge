@@ -4,18 +4,20 @@ import Main from '../../components/Main'
 import TickList from '../../components/TickList'
 import ticks from './tickListData'
 import bg from '../../img/choose.svg'
+import { useTranslation } from 'react-i18next'
 
 const ChooseUsSection = (props) => {
   const {children} = props;
+  const {t} = useTranslation();
   
   return (
     <div className={styles.chooseSec} id={props.sectionId ?? ""}>
         <div className={styles.container}>
             <Main 
                 className={styles.chooseMain}
-                subtitle='Warum sie mit uns arbeiten sollten'
-                title='<span>AlpineEdge</span> Ihr Partner für IT-Lösungen'
-                paragraph='Verlassen Sie sich auf AlpineEdge, um all Ihre IT-Bedürfnisse zu erfüllen. Mit unserem fachlichen Know-how und unserem Engagement für erstklassigen Service sind wir der ideale Partner für Ihr Unternehmen.'
+                subtitle={t('chooseSection.subtitle')}
+                title={t('chooseSection.title')}
+                paragraph={t('chooseSection.paragraph')}
                 isDark={true}
             />
             <TickList 

@@ -4,46 +4,46 @@ import emailImg from '../../img/footer/email.svg'
 
 const footerData = [
     {
-        header: 'Dienstleistungen',
+        header: 'footer.bottom.footerData.column1.header',
         links: [
             {
                 url: "#",
-                text: 'EU-Regulationen/ISO Standards',
+                text: 'footer.bottom.footerData.column1.links.text1',
             },{
                 url: "#",
-                text: 'Cloud Migration',
+                text: 'footer.bottom.footerData.column1.links.text2',
             },{
                 url: "#",
-                text: 'Cloud Computing',
+                text: 'footer.bottom.footerData.column1.links.text3',
             },{
                 url: "#",
-                text: 'Virtualisation',
+                text: 'footer.bottom.footerData.column1.links.text4',
             },{
                 url: "#",
-                text: 'IT Support',
+                text: 'footer.bottom.footerData.column1.links.text5',
             },
         ]
     },
     {
-        header: 'Über uns',
+        header: 'footer.bottom.footerData.column2.header',
         links: [
             {
                 url: "#about",
-                text: 'Über uns',
+                text: 'footer.bottom.footerData.column2.links.text1',
             },{
                 url: "#services",
-                text: 'Unsere Dienstleistungen',
+                text: 'footer.bottom.footerData.column2.links.text2',
             },{
                 url: "#choose",
-                text: 'Warum wir',
+                text: 'footer.bottom.footerData.column2.links.text3',
             },{
                 url: "#contact",
-                text: 'Kontaktieren sie uns',
+                text: 'footer.bottom.footerData.column2.links.text4',
             },
         ]
     },
     {
-        header: 'Kontaktdaten',
+        header: 'footer.bottom.footerData.column3.header',
         links: [
             {
                 icon: locationImg,
