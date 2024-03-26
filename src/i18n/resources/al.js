@@ -64,6 +64,28 @@ const alFile = {
         }
       }
     },
+    teamSection: {
+      subtitle: "Ekipi",
+      title: "Ekipi yne",
+      paragraph: "Ekipi yne i ri dhe dinamik do ju ndihmoje te arrini qellimet e juaja",
+      team: {
+        member1: {
+          text: "Head of IT",
+        },
+        member2: {
+          text: "Manaxher projekti",
+        },
+        member3: {
+          text: "konsulent",
+        },
+        member4: {
+          text: "konsulent",
+        },
+        member5: {
+          text: "Key Account Manager",
+        },
+      }
+    },
     contactSection: {
       subtitle: "Kontakti",
       title: "Na kontaktoni",

@@ -81,6 +81,9 @@ const itFile = {
         member4: {
           text: "Consulente",
         },
+        member5: {
+          text: "Key Account Manager",
+        },
       }
     },
     chooseSection: {

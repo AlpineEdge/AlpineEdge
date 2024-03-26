@@ -2,6 +2,7 @@ import profileImg2 from '../../img/team/fadel.jpeg'
 import profileImg1 from '../../img/team/rei.jpg'
 import profileImg3 from '../../img/team/Sascha.jpg'
 import profileImg4 from '../../img/team/Patrik.JPG'
+import profileImg5 from '../../img/team/geli.jpg'
 const teamData = [
     {
         image: profileImg1,
@@ -26,6 +27,12 @@ const teamData = [
         name:  "Patrik Kamberi",
         role: "",
         text: "teamSection.team.member4.text"
+    },
+    {
+        image: profileImg4,
+        name:  "Angjelos Braholli",
+        role: "",
+        text: "teamSection.team.member5.text"
     },
     
 ]

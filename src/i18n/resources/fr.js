@@ -81,6 +81,9 @@ const frFile = {
         member4: {
           text: "Consultant",
         },
+        member5: {
+          text: "Key Account Manager",
+        },
       }
     },
     chooseSection: {
