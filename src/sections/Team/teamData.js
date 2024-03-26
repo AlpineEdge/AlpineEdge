@@ -29,7 +29,7 @@ const teamData = [
         text: "teamSection.team.member4.text"
     },
     {
-        image: profileImg4,
+        image: profileImg5,
         name:  "Angjelos Braholli",
         role: "",
         text: "teamSection.team.member5.text"
